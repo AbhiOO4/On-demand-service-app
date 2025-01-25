@@ -37,7 +37,7 @@ function WorkerSignup() {
     };
 
     return (
-        <div className="max-w-4xl mx-auto p-8">
+        <div className="max-w-4xl mx-auto p-8 mt-5 border rounded-2xl shadow-md">
             <h2 className="text-2xl font-bold mb-6">Worker Registration</h2>
             <form onSubmit={handleSubmit}>
                 <table className="min-w-full table-auto">
@@ -51,7 +51,7 @@ function WorkerSignup() {
                                     name="fullName"
                                     value={formData.fullName}
                                     onChange={handleChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border px-3 py-2 w-full rounded-2xl border-gray-300"
                                     required
                                 />
                             </td>
@@ -64,7 +64,7 @@ function WorkerSignup() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border px-3 py-2 w-full rounded-2xl border-gray-300"
                                     required
                                 />
                             </td>
@@ -77,7 +77,7 @@ function WorkerSignup() {
                                     name="phoneNumber"
                                     value={formData.phoneNumber}
                                     onChange={handleChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border px-3 py-2 w-full rounded-2xl border-gray-300"
                                     required
                                 />
                             </td>
@@ -91,7 +91,7 @@ function WorkerSignup() {
                                     name="domain"
                                     value={formData.domain}
                                     onChange={handleChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border px-3 py-2 w-full rounded-2xl border-gray-300"
                                     required
                                 >
                                     <option value="">Select a domain</option>
@@ -115,7 +115,7 @@ function WorkerSignup() {
                                     type="file"
                                     name="certification"
                                     onChange={handleFileChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border px-3 py-2 w-full rounded-2xl border-gray-300"
                                     required
                                 />
                             </td>
@@ -129,7 +129,7 @@ function WorkerSignup() {
                                     type="file"
                                     name="idProof"
                                     onChange={handleFileChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border px-3 py-2 w-full rounded-2xl border-gray-300"
                                     required
                                 />
                             </td>
@@ -144,7 +144,7 @@ function WorkerSignup() {
                                     name="username"
                                     value={formData.username}
                                     onChange={handleChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border px-3 py-2 w-full rounded-2xl border-gray-300"
                                     required
                                 />
                             </td>
@@ -157,7 +157,7 @@ function WorkerSignup() {
                                     name="password"
                                     value={formData.password}
                                     onChange={handleChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border px-3 py-2 w-full rounded-2xl border-gray-300"
                                     required
                                 />
                             </td>
@@ -170,7 +170,7 @@ function WorkerSignup() {
                                     name="confirmPassword"
                                     value={formData.confirmPassword}
                                     onChange={handleChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border px-3 py-2 w-full rounded-2xl border-gray-300"
                                     required
                                 />
                             </td>

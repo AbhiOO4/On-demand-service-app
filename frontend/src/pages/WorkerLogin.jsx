@@ -30,7 +30,7 @@ function WorkerLogin() {
     };
 
     return (
-        <div className="max-w-md mx-auto p-8">
+        <div className="max-w-md mx-auto p-8 border mt-5 rounded-2xl shadow-md">
             <h2 className="text-2xl font-bold mb-6">Worker Login</h2>
             <form onSubmit={handleSubmit}>
                 <table className="min-w-full table-auto">
@@ -44,7 +44,7 @@ function WorkerLogin() {
                                     name="username"
                                     value={formData.username}
                                     onChange={handleChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border border-gray-300 px-3 py-2 w-full rounded-2xl"
                                     required
                                 />
                             </td>
@@ -59,7 +59,7 @@ function WorkerLogin() {
                                     name="password"
                                     value={formData.password}
                                     onChange={handleChange}
-                                    className="border px-3 py-2 w-full rounded-2xl"
+                                    className="border border-gray-300 px-3 py-2 w-full rounded-2xl"
                                     required
                                 />
                             </td>
