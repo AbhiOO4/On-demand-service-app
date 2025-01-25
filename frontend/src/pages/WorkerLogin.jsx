@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function WorkerLogin() {
     const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ function WorkerLogin() {
     };
 
     return (
-        <div className="max-w-md mx-auto p-8 border mt-5 rounded-2xl shadow-md">
+        <div className="max-w-md mx-auto p-8 mt-5 border rounded-2xl shadow-md">
             <h2 className="text-2xl font-bold mb-6">Worker Login</h2>
             <form onSubmit={handleSubmit}>
                 <table className="min-w-full table-auto">
@@ -70,6 +71,14 @@ function WorkerLogin() {
                     Login
                 </button>
             </form>
+
+            {/* Registration Link */}
+            <p className="mt-4 text-center">
+                Don't have an account?{' '}
+                <Link to="/workersignup" className="text-blue-600 hover:underline">
+                    Register here
+                </Link>
+            </p>
         </div>
     );
 }
