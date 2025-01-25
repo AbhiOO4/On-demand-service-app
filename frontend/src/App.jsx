@@ -11,6 +11,8 @@ import WorkerDashboard from './pages/WorkerDashboard';
 import ServiceRequest from './pages/ServiceRequest';
 import Services from "./pages/Services";
 import Profile from './pages/Profile';
+import Workersignup from "./pages/Workersignup";
+import WorkerLogin from "./pages/WorkerLogin";
 
 function App() {
   return (
@@ -55,6 +57,8 @@ function App() {
                 </PrivateRoute>
               }
             />
+            <Route path="/Workersignup" element={<Workersignup />} />
+            <Route path="/WorkerLogin" element={<WorkerLogin />} />
           </Routes>
         </div>
       </div>
